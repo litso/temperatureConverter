@@ -19,6 +19,8 @@
 		AF4DC2A017FDEF810040A386 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF4DC28817FDEF810040A386 /* UIKit.framework */; };
 		AF4DC2A817FDEF820040A386 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AF4DC2A617FDEF820040A386 /* InfoPlist.strings */; };
 		AF4DC2AA17FDEF820040A386 /* temperatureConverterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4DC2A917FDEF820040A386 /* temperatureConverterTests.m */; };
+		AF4DC2B617FDF3E90040A386 /* RMTemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4DC2B417FDF3E90040A386 /* RMTemperatureViewController.m */; };
+		AF4DC2B717FDF3E90040A386 /* RMTemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AF4DC2B517FDF3E90040A386 /* RMTemperatureViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		AF4DC2A517FDEF820040A386 /* temperatureConverterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "temperatureConverterTests-Info.plist"; sourceTree = "<group>"; };
 		AF4DC2A717FDEF820040A386 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AF4DC2A917FDEF820040A386 /* temperatureConverterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = temperatureConverterTests.m; sourceTree = "<group>"; };
+		AF4DC2B317FDF3E90040A386 /* RMTemperatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMTemperatureViewController.h; sourceTree = "<group>"; };
+		AF4DC2B417FDF3E90040A386 /* RMTemperatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMTemperatureViewController.m; sourceTree = "<group>"; };
+		AF4DC2B517FDF3E90040A386 /* RMTemperatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RMTemperatureViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +82,9 @@
 		AF4DC27817FDEF810040A386 = {
 			isa = PBXGroup;
 			children = (
+				AF4DC2B317FDF3E90040A386 /* RMTemperatureViewController.h */,
+				AF4DC2B417FDF3E90040A386 /* RMTemperatureViewController.m */,
+				AF4DC2B517FDF3E90040A386 /* RMTemperatureViewController.xib */,
 				AF4DC28A17FDEF810040A386 /* temperatureConverter */,
 				AF4DC2A317FDEF820040A386 /* temperatureConverterTests */,
 				AF4DC28317FDEF810040A386 /* Frameworks */,
@@ -222,6 +230,7 @@
 			files = (
 				AF4DC28F17FDEF810040A386 /* InfoPlist.strings in Resources */,
 				AF4DC29717FDEF810040A386 /* Images.xcassets in Resources */,
+				AF4DC2B717FDF3E90040A386 /* RMTemperatureViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +251,7 @@
 			files = (
 				AF4DC29117FDEF810040A386 /* main.m in Sources */,
 				AF4DC29517FDEF810040A386 /* RMAppDelegate.m in Sources */,
+				AF4DC2B617FDF3E90040A386 /* RMTemperatureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +375,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "temperatureConverter/temperatureConverter-Prefix.pch";
 				INFOPLIST_FILE = "temperatureConverter/temperatureConverter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -378,7 +391,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "temperatureConverter/temperatureConverter-Prefix.pch";
 				INFOPLIST_FILE = "temperatureConverter/temperatureConverter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
